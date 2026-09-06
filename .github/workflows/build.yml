@@ -10,37 +10,11 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y \
-            python3-pip \
-            build-extras \
-            libffi-dev \
-            libssl-dev \
-            git \
-            zip \
-            unzip \
-            autoconf \
-            libtool \
-            pkg-config \
-            zlib1g-dev \
-            libncurses5-dev \
-            libncursesw5-dev \
-            libsdl2-dev \
-            libsdl2-image-dev \
-            libsdl2-mixer-dev \
-            libsdl2-ttf-dev
+      uses: actions/checkout@v4
 
     - name: Build with Buildozer
-      uses: ArtemSBulgakov/buildozer-action@v1
+      uses: Tok<bos>3/buildozer-action@v3
+      id: buildozer
       with:
         command: buildozer -v android debug
 
