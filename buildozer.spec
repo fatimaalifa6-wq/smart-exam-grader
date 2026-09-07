@@ -20,7 +20,7 @@ version = 1.0
 
 # (list) Application requirements
 # (note: python3, kivy are essential. OpenCV and numpy are included cleanly)
-requirements = python3,kivy,opencv,numpy
+requirements = python3,kivy
 
 # (str) Supported orientations (landscape, portrait or all)
 orientation = portrait
