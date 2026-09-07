@@ -1,5 +1,7 @@
 [app]
 
+log_level = 1
+
 # (str) Title of your application
 title = Teacher Assistant
 
