@@ -9,11 +9,16 @@ package.name = smartteacher
 # (str) Package domain (needed for android packaging)
 package.domain = org.teacher
 
+# (str) Source directory where the main.py file lives
+source.dir = .
+
 # (list) Source files to include (let it blank to include all files)
 source.include_exts = py,png,jpg,kv,atlas
 
+# (str) Application versioning (version or version.regex)
+version = 1.0
+
 # (list) Application requirements
-# تأكدي من إبقاء requirements خفيفة كما اتفقنا لتجاوز التعقيدات
 requirements = python3,kivy
 
 # (str) Supported orientations
